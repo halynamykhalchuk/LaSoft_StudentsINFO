@@ -97,3 +97,54 @@ let b3 = Object.create(subject)
     b3.author = 'Sten Lee',
     b3.genre = 'Comics',
     b3.price = 25
+
+//Marks
+let st1_sub2_markReport = Object.create(markReport)
+st1_sub2_markReport.subj = sub2
+st1_sub2_markReport.points = 35
+st1_sub2_markReport.mark = 75
+
+let st1_sub_markReport = Object.create(markReport)
+st1_sub_markReport.subj = subject
+st1_sub_markReport.points = 28
+st1_sub_markReport.mark = 71
+
+let st3_sub2_markReport = Object.create(markReport)
+st3_sub2_markReport.subj = sub2
+st3_sub2_markReport.points = 17
+st3_sub2_markReport.mark = 51
+
+let st3_sub_markReport = Object.create(markReport)
+st3_sub_markReport.subj = subject
+st3_sub_markReport.points = 35
+st3_sub_markReport.mark = 66
+
+let st2_sub_markReport = Object.create(markReport)
+st2_sub_markReport.subj = subject
+st2_sub_markReport.points = 30
+st2_sub_markReport.mark = 63
+
+let st2_sub1_markReport = Object.create(markReport)
+st2_sub1_markReport.subj = sub1
+st2_sub1_markReport.points = 35
+st2_sub1_markReport.mark = 55
+
+let st4_sub_markReport = Object.create(markReport)
+st4_sub_markReport.subj = subject
+st4_sub_markReport.points = 28
+st4_sub_markReport.mark = 68
+
+let st4_sub1_markReport = Object.create(markReport)
+st4_sub1_markReport.subj = sub1
+st4_sub1_markReport.points = 29
+st4_sub1_markReport.mark = 58
+
+let st5_sub_markReport = Object.create(markReport)
+st5_sub_markReport.subj = subject
+st5_sub_markReport.points = 45
+st5_sub_markReport.mark = 92
+
+let st5_sub1_markReport = Object.create(markReport)
+st5_sub1_markReport.subj = sub1
+st5_sub1_markReport.points = 47
+st5_sub1_markReport.mark = 97

@@ -250,16 +250,19 @@ let gr2 = Object.create(group);
     gr2.groupMembers = []
     gr2.groupMembers.push(st2, st4, st5)
 
+
+
 //Functions
+
 function printStudent(group) {
     let studentList = "";
-    studentList += "\nStudents from group #" + group.groupNum + "\n";
-    studentList += "The Head of group: " + group.groupHead.sname + " " + group.groupHead.name + "\n";
+    studentList += "\nStudents from group #" + group.groupNum + "\n" + "The Head of group: " + group.groupHead.sname + " " + group.groupHead.name + "\n";
     for (let j = 0; j < group.groupMembers.length; j++) {
         studentList += +(j + 1) + " Student" + ": " + group.groupMembers[j].sname + " " + group.groupMembers[j].name + "\n";
     }
     studentList += "\n";
-    return( studentList);
+
+    return(studentList);
 }
 
 

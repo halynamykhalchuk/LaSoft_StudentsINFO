@@ -256,7 +256,8 @@ let gr2 = Object.create(group);
 
 function printStudent(group) {
     let studentList = "";
-    studentList += "\nStudents from group #" + group.groupNum + "\n" + "The Head of group: " + group.groupHead.sname + " " + group.groupHead.name + "\n";
+    studentList += "\nStudents from group #" + group.groupNum + "\n" 
+    + "The Head of group: " + group.groupHead.sname + " " + group.groupHead.name + "\n";
     for (let j = 0; j < group.groupMembers.length; j++) {
         studentList += +(j + 1) + " Student" + ": " + group.groupMembers[j].sname + " " + group.groupMembers[j].name + "\n";
     }
@@ -284,4 +285,13 @@ function marksXtoY(group, x, y) {
 }
 
 
+function rateReport(student) {
+    let rep = '';
+    rep += student.sname + " " + student.name + " " + student.fname + "\n"
+    +  "Scolarship status: " + student.scship + "\n"
+     "Rating: " + student.rate;
+
+
+    return rep;
+}
 

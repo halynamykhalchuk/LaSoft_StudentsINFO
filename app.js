@@ -266,4 +266,22 @@ function printStudent(group) {
 }
 
 
+function marksXtoY(group, x, y) {
+    let studentList = "";
+    studentList += "\nStudents with rating from " + x;
+    studentList += " to " + y + "\n";
+    for (let i = 0; i < group.groupMembers.length; i++) {
+        
+            if (group.groupMembers[i].rate > x && group.groupMembers[i].rate < y) {
+                studentList += "Student " + ": " + group.groupMembers[i].sname + " " 
+                + group.groupMembers[i].name+ " " + group.groupMembers[i].rate;
+                studentList +="\n"
+            }
+        
+    }
+
+    return(studentList);
+}
+
+
 

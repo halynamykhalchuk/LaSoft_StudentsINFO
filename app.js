@@ -268,9 +268,12 @@ function printStudent(group) {
 
 
 function marksXtoY(group, x, y) {
+
     let studentList = "";
+
     studentList += "\nStudents with rating from " + x;
     studentList += " to " + y + "\n";
+    
     for (let i = 0; i < group.groupMembers.length; i++) {
         
             if (group.groupMembers[i].rate > x && group.groupMembers[i].rate < y) {
@@ -286,11 +289,12 @@ function marksXtoY(group, x, y) {
 
 
 function rateReport(student) {
+
     let rep = '';
+
     rep += student.sname + " " + student.name + " " + student.fname + "\n"
     +  "Scolarship status: " + student.scship + "\n"
      "Rating: " + student.rate;
-
 
     return rep;
 }
